@@ -19,18 +19,18 @@
 			<div id="sidebar-wrapper">
 				<ul class="sidebar-nav">
 					<li class="sidebar-brand">
-						<a href="#">
+						<a href="#home">
 							Home
 						</a>
 					</li>
 					<li>
-						<a href="#"> Interactive Box </a>
+						<a href="#interactive"> Interactive Box </a>
 					</li>
 					<li>
-						<a href="#"> Drawings </a>
+						<a href="#drawings"> Drawings </a>
 					</li>
 					<li>
-						<a href="#"> Static Manual </a>
+						<a href="#static"> Static Manual </a>
 					</li>
 				</ul>
 			</div>
@@ -38,24 +38,84 @@
 
 		<!-- Page Content -->
         <div id="page-content-wrapper">
-            <div class="container-fluid">
+            <div class="container-fluid" id="home">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>Simple Sidebar</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                        <h1>X-ray Cabinet</h1>
+                        <p>Welcome to the home screen of the X-Ray Cabinet (Insert text here)</p>
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                     </div>
                 </div>
             </div>
+
+            <div class="container-fluid" id="interactive">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>X-ray Cabinet</h1>
+                        <p>Welcome to the interactive screen of the X-Ray Cabinet (Insert dynamic box here)</p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid" id="drawings">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>X-ray Cabinet</h1>
+                        <p>Welcome to the drawings screen of the X-Ray Cabinet (Insert links for drawings here)</p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid" id="static">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>X-ray Cabinet</h1>
+                        <p>Welcome to the static manual screen of the X-Ray Cabinet (Insert static manual here)</p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
      </div>
 	 <!-- Menu Toggle Script -->
 	    <script>
+
 	    $("#menu-toggle").click(function(e) {
 	        e.preventDefault();
 	        $("#wrapper").toggleClass("toggled");
 	    });
+	    $('a[href="#home"]').click(function() {
+	    	hideAll();
+	    	$("#home").show();
+	    });
+	    $('a[href="#interactive"]').click(function() {
+	    	hideAll();
+	    	$("#interactive").show();
+	    });
+	    $('a[href="#drawings"]').click(function() {
+	    	hideAll();
+	    	$("#drawings").show();
+	    });
+	    $('a[href="#static"]').click(function() {
+	    	hideAll();
+	    	$("#static").show();
+	    });
+
+	   	function hideAll() {
+	    	$("#home").hide();
+	    	$("#interactive").hide();
+	    	$("#drawings").hide();
+	    	$("#static").hide();
+	    }
+
+	    hideAll();
+
+	    $("#home").show();
+
+
 	    </script>
 	</body>
 </html>
