@@ -19,9 +19,7 @@
 			<div id="sidebar-wrapper">
 				<ul class="sidebar-nav">
 					<li class="sidebar-brand">
-						<a href="#home">
-							Home
-						</a>
+						<a href="#home"> Home </a>
 					</li>
 					<li>
 						<a href="#interactive"> Interactive Box </a>
@@ -52,8 +50,33 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Interactive X-ray Cabinet</h1>
-                        <p>Welcome to the interactive screen of the X-Ray Cabinet (Insert dynamic box here)</p>
-                        <a href="#menu-toggle" class="btn btn-default menu-toggle">Toggle Menu</a>
+
+                        <div class="columns">
+	                        <h3>Box Opening</h3>
+	                        <video width="500" height="500" controls>
+	                        	<source src="video/Opening_Animation.mp4" type="video/mp4"/>
+	                        </video>
+
+	                        <h3>Reflector</h3>
+	                        <video width="500" height="500" controls>
+	                        	<source src="video/Reflector_Animation.mp4" type="video/mp4"/>
+	                        </video>
+	                    </div>
+
+	                    <div class="columns">
+	                        <h3>X-ray Support Animation</h3>
+	                        <video width="500" height="500" controls>
+	                        	<source src="video/X-Ray_Support_Animation.mp4" type="video/mp4"/>
+	                        </video>
+
+	                        <h3>Cell Support Animation</h3>
+	                        <video width="500" height="500" controls>
+	                        	<source src="video/Cell_Support_Animation.mp4" type="video/mp4"/>
+	                        </video>
+	                    </div>
+
+	                    <a href="#menu-toggle" class="btn btn-default menu-toggle">Toggle Menu</a>
+
                     </div>
                 </div>
             </div>
@@ -62,7 +85,13 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>X-ray Cabinet Drawings</h1>
-                        <p>Welcome to the drawings screen of the X-Ray Cabinet (Insert links for drawings here)</p>
+                        <ul>
+                        	<li>
+                        		<a href="#"> 
+                        	</li>
+                        	<li>
+                        	</li>
+                        </ul>
                         <a href="#menu-toggle" class="btn btn-default menu-toggle">Toggle Menu</a>
                     </div>
                 </div>
@@ -114,7 +143,6 @@
 	    hideAll();
 
 	    $("#home").show();
-
 
 	    </script>
 	</body>

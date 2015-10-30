@@ -96,6 +96,11 @@
     background: none;
 }
 
+.columns {
+    width: 50%;
+    float: left;
+}
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
