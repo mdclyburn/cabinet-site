@@ -1,0 +1,21 @@
+.image-frame {
+	background-color: #333333;
+	min-width: 400px;
+	max-width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+	border-radius: 1%;
+}
+
+.framed-image {
+	width: 100%;
+	border-radius: 2em;
+	margin-bottom: 1em;
+}
+
+.image-frame > p {
+	text-align: center;
+	font-size: 9pt;
+	color: white;
+}
