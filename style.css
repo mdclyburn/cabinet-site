@@ -136,3 +136,9 @@
         margin-right: 0;
     }
 }
+
+.fake-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
